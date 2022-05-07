@@ -194,7 +194,7 @@ func (c *Client) url(method string, optQueryString ...string) string {
 }
 
 func (c *Client) do(req *http.Request) (*http.Response, error) {
-	req.Header.Add("User-Agent", "EasyPayClient/go1.0")
+	req.Header.Add("User-Agent", "EasyPaySDK/go1.0")
 	req.Header.Add("Content-Type", "application/json")
 	client := c.Client
 	if client == nil {

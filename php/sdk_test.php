@@ -1,8 +1,8 @@
 <?php
 require(__DIR__ . '/sdk.php');
 
-// easypay_init("626f63fd5d6816e8087e69d3", "aIjkzXPv3z4sj1VM");
-// var_dump(easypay_me());
+easypay_init("626f63fd5d6816e8087e69d3", "aIjkzXPv3z4sj1VM");
+var_dump(easypay_me());
 /*var_dump(easypay_paylink([
     'items' => [
         [

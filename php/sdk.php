@@ -192,7 +192,6 @@ function easypay_deduct($params)
         return false;
     }
     curl_close($ch);
-    echo $output;
     $resp = json_decode($output, true);
     if (!isset($resp['code']) || !isset($resp['status']) || !isset($resp['result']) || $resp['result'] === false) {
         $_easypay_errno = 65535;
